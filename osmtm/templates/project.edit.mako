@@ -4,12 +4,12 @@
 <h1>${project.id} - ${project.name} - Edit</h1>
 </%block>
 <%block name="content">
-<link rel="stylesheet" href="${request.static_url('osmtm:static/js/lib/datepicker3.css', _query={'v':'2.5-dev'})}">
-<script type="text/javascript" src="${request.static_url('osmtm:static/js/lib/angular.min.js', _query={'v':'2.5-dev'})}"></script>
-<script type="text/javascript" src="${request.static_url('osmtm:static/js/lib/bootstrap-datepicker.js', _query={'v':'2.5-dev'})}"></script>
-<link rel="stylesheet" href="${request.static_url('osmtm:static/js/lib/Leaflet.draw/dist/leaflet.draw.css', _query={'v':'2.5-dev'})}"/>
-<script src="${request.static_url('osmtm:static/js/lib/leaflet.js', _query={'v':'2.5-dev'})}"></script>
-<script src="${request.static_url('osmtm:static/js/lib/Leaflet.draw/dist/leaflet.draw.js', _query={'v':'2.5-dev'})}"></script>
+<link rel="stylesheet" href="${request.static_url('osmtm:static/js/lib/datepicker3.css', _query={'v':'2.6-dev'})}">
+<script type="text/javascript" src="${request.static_url('osmtm:static/js/lib/angular.min.js', _query={'v':'2.6-dev'})}"></script>
+<script type="text/javascript" src="${request.static_url('osmtm:static/js/lib/bootstrap-datepicker.js', _query={'v':'2.6-dev'})}"></script>
+<link rel="stylesheet" href="${request.static_url('osmtm:static/js/lib/Leaflet.draw/dist/leaflet.draw.css', _query={'v':'2.6-dev'})}"/>
+<script src="${request.static_url('osmtm:static/js/lib/leaflet.js', _query={'v':'2.6-dev'})}"></script>
+<script src="${request.static_url('osmtm:static/js/lib/Leaflet.draw/dist/leaflet.draw.js', _query={'v':'2.6-dev'})}"></script>
 <div id="markdown_cheat_sheet" class="modal fade">
   <div class="modal-dialog">
   <div class="modal-content">
@@ -78,7 +78,7 @@ geometry = loads(str(project.area.geometry.data))
       </div>
     </div>
   </form>
-  <script type="text/javascript" src="${request.static_url('osmtm:static/js/project.edit.js', _query={'v':'2.5-dev'})}"></script>
+  <script type="text/javascript" src="${request.static_url('osmtm:static/js/project.edit.js', _query={'v':'2.6-dev'})}"></script>
   <script src="http://twitter.github.io/typeahead.js/releases/latest/typeahead.bundle.js"></script>
 </div>
 </%block>
@@ -306,7 +306,7 @@ geometry = loads(str(project.area.geometry.data))
         <span class="glyphicon glyphicon-lock"></span> Private
       </label>
       <div class="help-block">
-        Private means that only a given list of users can access this project.
+        Private means that only a given list of users can access this project. In order for the user's name to be available to add to the Allowed Users - they first must visit the URL for your instance of OSMTM and Authorize access to their OpenStreetMap account. After they've done this, their username should be available for the administrator to add.
       </div>
     </div>
   </div>
